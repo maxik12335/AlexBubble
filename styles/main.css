@@ -42,6 +42,11 @@ body {
 
 .header-tel {
   color: white;
+  transition: 0.2;
+}
+
+.header-tel:hover {
+  color: rgb(204, 204, 204);
 }
 
 .header-contacts {
@@ -95,11 +100,18 @@ body {
 }
 
 .quote {
-  background-color: black;
+  background-color: #000000bf;
   color: white;
-  font-size: 20px;
+  font-size: 30px;
   text-transform: uppercase;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(../images/quote/quote-3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .proofs-list__item {
@@ -143,6 +155,10 @@ body {
   min-width: 500px;
   object-fit: cover;
   border-radius: 10px;
+  position: relative;
+  -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.36);
+  box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.36);
 }
 
 .section-title {
@@ -182,6 +198,14 @@ body {
   display: block;
   margin: 0 auto;
   margin-bottom: 50px;
+}
+
+.contacts-tel {
+  color: black; 
+}
+
+.contacts-tel:hover {
+  color: rgb(73, 73, 73);
 }
 
 .contacts-img {
