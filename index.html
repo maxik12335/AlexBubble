@@ -178,5 +178,23 @@
       </div>
     </section>
   </footer>
+
+  <script>
+    const quote = document.querySelector(".quote")
+    let quoteFilterHueRotate = 0
+    setInterval(() => {
+      quoteFilterHueRotate = quoteFilterHueRotate + 10
+      quote.style.filter = `hue-rotate(${quoteFilterHueRotate}deg)`
+      console.log(quoteFilterHueRotate)
+    }, 70)
+
+    const header = document.querySelector(".header")
+    let headerFilterHueRotate = 0
+    setInterval(() => {
+      headerFilterHueRotate = headerFilterHueRotate + 10
+      header.style.filter = `hue-rotate(${headerFilterHueRotate}deg)`
+      console.log(headerFilterHueRotate)
+    }, 50)
+  </script>
 </body>
 </html>
